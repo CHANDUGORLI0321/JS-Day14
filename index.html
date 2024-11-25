@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+    <script>
+
+//minimum problem
+let numa=28345;
+
+let str=String(numa);
+let min=str[0]
+for(i=0; i<str.length; i++){
+    if(min>str[i]){
+        min=str[i]
+    }
+    }
+    console.log(min)
+
+
+    //maximum problem
+
+    let num=8737;
+
+let stra=String(num);
+let max=stra[0]
+for(i=0; i<str.length; i++){
+    if(max<stra[i]){
+        max=stra[i]
+    }
+    }
+    console.log(max)
+
+
+    //Random otp generator
+
+    let a="0987654321";
+    let otp="";
+    let lan=a.length
+    for(i=0; i<4; i++){
+        otp += a[Math.floor(Math.random()*lan)];
+    }
+    console.log(otp);
+
+
+    </script>
+</body>
+</html>
